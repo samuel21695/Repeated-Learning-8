@@ -60,3 +60,6 @@ function createElement(tagName, props) {
 // 사용 예제
 var styleString = styleValueMaker('color: red', 'font-size: 16px', 'padding: 10px');
 var divString = createElement('div', { style: styleString }, '이것은 스타일이 적용된 div 입니다.');
+
+console.log(styleString)
+console.log(divString)
