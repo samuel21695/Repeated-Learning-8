@@ -60,3 +60,7 @@ function createElement(tagName: string, props?: Props, ...children: string[]): s
   const result = elementStrings.join(''); // join 메서드 덕분에 배열은 하나의 문자열로 합쳐집니다.
   return result;
 }
+
+// 사용 예제
+let styleString = styleValueMaker('color: red', 'font-size: 16px', 'padding: 10px');
+let divString = createElement('div', { style: styleString }, '이것은 스타일이 적용된 div 입니다.')
